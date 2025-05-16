@@ -12,7 +12,7 @@ var Cache atomic.Value
 var keys []string
 
 func main() {
-    keys = strings.Split("1 2 3 4 5 6 7 8 9 10", " ")
+	keys = strings.Split("1 2 3 4 5 6 7 8 9 10", " ")
 	m = make(map[string]int)
 	Cache.Store(m)
 	for i := 0; i < 10; i++ {
@@ -36,8 +36,8 @@ func main() {
 
 func newMap(id int) map[string]int {
 	res := map[string]int{}
-    for _, key := range keys {
-	    res[key] = id
-    }
+	for _, key := range keys {
+		res[key] = id
+	}
 	return res
 }
