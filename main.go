@@ -18,4 +18,3 @@ func main() {
 		fmt.Println(msg.Payload)
 	}
 }
-// dummy comment
