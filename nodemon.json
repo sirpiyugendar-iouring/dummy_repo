@@ -1,0 +1,7 @@
+{
+    "exec": "go run .\\src -config config/config.yaml",
+    "watch": [
+        "src"
+    ],
+    "ext": "go"
+}
